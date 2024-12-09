@@ -22,19 +22,19 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div style={{ width: "100%", height: "80%", display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <div style={{ width: "100%", height: "80%", display: "flex", flexDirection: "column", alignItems: "center", paddingTop: "20px" }}>
           <div style={{ width: "100%", height: "18%", marginTop: "2%", marginBottom: "2%", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div style={{ width: "80%", height: "80%" }}>
               <div style={{ color: "#374957", fontFamily: "Lufga", fontSize: "40px", fontWeight: "500", lineHeight: "normal" }}>
                 Get Started now
               </div>
-              <div style={{ color: "#838A8F", fontFamily: "Lufga", fontWeight: "400", fontSize: "24px", lineHeight: "normal" }}>
+              <div style={{ color: "#838A8F", fontFamily: "Lufga", fontWeight: "400", fontSize: "24px", lineHeight: "normal", paddingTop: "5px", marginBottom: "90px" }}>
                 Enter your details to access your account
               </div>
             </div>
           </div>
 
-          <div style={{ width: "80%", height: "76%", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+          <div style={{ width: "80%", height: "76%", display: "flex", flexDirection: "column", paddingTop: "40px" }}>
 
             <div style={{ height: "130px", width: "100%" }}>
               <div style={{ height: "29px", width: "100%", marginBottom: "10px", color: "#374957", fontFamily: "Lufga", fontSize: "22px", fontWeight: "400" }}>
@@ -95,7 +95,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div style={{ width: "100%", height: "15%", display: "flex", justifyContent: "center" }}>
+        <div style={{ width: "100%", height: "5%", display: "flex", justifyContent: "center" }}>
           <div style={{ width: "80%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div onClick={() => navigate('/verification')} style={{ width: "100%", height: "60px", background: "#161616", borderRadius: "25px", color: "#FFF8F8", fontFamily: "Lufga", fontSize: "24px", fontWeight: "500", display: "flex", alignItems: "center", justifyContent: "center" }}>
               Register
@@ -105,7 +105,7 @@ const LandingPage = () => {
 
       </div>
 
-      <div style={{ height: "98%", width: "45%", background: "#000", flexShrink: "0", borderRadius: "25px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+      <div style={{ height: "90%", width: "45%", background: "#000", flexShrink: "0", borderRadius: "25px", display: "flex", alignItems: "center", justifyContent: "center" }}>
         <img src={img1} alt='img' style={{width: "100%", height: "80%"}}></img>
       </div>
 
