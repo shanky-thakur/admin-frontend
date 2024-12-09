@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import LandingPage from './Components/LandingPage/LandingPage';
 import LoadingPage from './Components/LoadingPage/LoadingPage';
+import VerificationPage from './Components/VerificationPage/VerificationPage';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         (
           <Routes>
             <Route path="/" element={< LandingPage />} ></Route>
+            <Route path="/verification" element={< VerificationPage />}></Route>
           </Routes>
         )}
     </Router>
