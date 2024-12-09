@@ -9,9 +9,9 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div style={{ height: "100vh", width: "100%", display: "flex", justifyContent: "space-evenly", alignItems: "center", paddingTop: "2%", paddingBottom: "2%", background: "#F8F8F8" }}>
+    <div style={{ height: "90vh", width: "100%", display: "flex", justifyContent: "space-evenly", alignItems: "center", paddingTop: "2%", paddingBottom: "2%", background: "#F8F8F8" }}>
 
-      <div style={{ height: "100%", width: "45%" }}>
+      <div style={{ height: "80%", width: "45%" }}>
 
         <div style={{ width: "100%", height: "5%", display: "flex" }}>
           <div style={{ width: "32%", height: "100%", display: "flex", alignItems: "center", justifyContent: "space-evenly" }}>
@@ -95,7 +95,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div style={{ width: "100%", height: "5%", display: "flex", justifyContent: "center" }}>
+        <div style={{ width: "100%", height: "5%", display: "flex", justifyContent: "center", paddingTop: "70px" }}>
           <div style={{ width: "80%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div onClick={() => navigate('/verification')} style={{ width: "100%", height: "60px", background: "#161616", borderRadius: "25px", color: "#FFF8F8", fontFamily: "Lufga", fontSize: "24px", fontWeight: "500", display: "flex", alignItems: "center", justifyContent: "center" }}>
               Register
