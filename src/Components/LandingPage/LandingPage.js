@@ -1,8 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import img1 from "../../assets/images/group-11165993881.png";
-import img2 from "../../assets/images/group-11165993871.png"
+import img1 from "../../assets/images/Untitled design.png";
 import img3 from "../../assets/images/ellipse-69.png";
 import img4 from "../../assets/images/group-1.png";
 
@@ -107,7 +106,7 @@ const LandingPage = () => {
       </div>
 
       <div style={{ height: "98%", width: "45%", background: "#000", flexShrink: "0", borderRadius: "25px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-
+        <img src={img1} alt='img' style={{width: "100%", height: "80%"}}></img>
       </div>
 
     </div>

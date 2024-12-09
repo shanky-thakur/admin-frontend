@@ -1,0 +1,35 @@
+.image-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
+    gap: 20px;
+    /* Space between columns */
+    padding: 20px;
+    background-color: #000000;
+    /* Background color */
+    border-radius: 20px;
+    align-items: center;
+    /* Centers the images vertically */
+}
+
+.image-box {
+    text-align: center;
+}
+
+.large-image img {
+    width: 100%;
+    /* Fill the grid column */
+    max-width: 80%;
+    /* Max width to keep aspect ratio */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.23);
+}
+
+.small-image img {
+    width: 100%;
+    /* Fill the grid column */
+    max-width: 50%;
+    /* Max width to keep aspect ratio */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.23);
+}

@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './Components/LandingPage/LandingPage';
 import LoadingPage from './Components/LoadingPage/LoadingPage';
 import VerificationPage from './Components/VerificationPage/VerificationPage';
+import WaitingPage from './Components/WaitingPage/WaitingPage';
+import Dashboard from './Components/Dashboard/Dashboard';
 
 function App() {
 
@@ -25,6 +27,8 @@ function App() {
           <Routes>
             <Route path="/" element={< LandingPage />} ></Route>
             <Route path="/verification" element={< VerificationPage />}></Route>
+            <Route path="/waiting" element={< WaitingPage />}></Route>
+            <Route path="/dashboard" element={< Dashboard />}></Route>
           </Routes>
         )}
     </Router>
