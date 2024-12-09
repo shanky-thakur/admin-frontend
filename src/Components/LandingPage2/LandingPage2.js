@@ -2,7 +2,7 @@ import React from 'react'
 
 const LandingPage2 = () => {
   return (
-    <div style={{ height: "100vh", width: "1280px", background: "#F8F8F8", display: "flex", justifyContent: "space-around", alignItems: "center" }}>
+    <div style={{ height: "100vh", width: "80vw", background: "#F8F8F8", display: "flex", justifyContent: "space-around", alignItems: "center" }}>
 
         
         <div style={{height: "80%", width: "45%", background: "blue"}}>
