@@ -9,8 +9,6 @@ import VerificationPage from './Components/VerificationPage/VerificationPage';
 import WaitingPage from './Components/WaitingPage/WaitingPage';
 import Dashboard from './Components/Dashboard/Dashboard';
 
-import LandingPage2 from './Components/LandingPage2/LandingPage2';
-
 function App() {
 
   const [loading, setLoading] = useState(true);
@@ -31,7 +29,6 @@ function App() {
             <Route path="/verification" element={< VerificationPage />}></Route>
             <Route path="/waiting" element={< WaitingPage />}></Route>
             <Route path="/dashboard" element={< Dashboard />}></Route>
-            <Route path="/2" element={< LandingPage2/>}></Route>
           </Routes>
         )}
     </Router>

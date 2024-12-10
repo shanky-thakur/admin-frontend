@@ -73,7 +73,7 @@ const LandingPage2 = () => {
 
                 </div>
 
-                <div onClick={() => navigate('/2')} style={{ width: "100%", height: "10%", background: "#161616", borderRadius: "25px", fontFamily: "Lufga", fontSize: "20px", fontWeight: "500", color: "#FFF8F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <div onClick={() => navigate('/verification')} style={{ width: "100%", height: "10%", background: "#161616", borderRadius: "25px", fontFamily: "Lufga", fontSize: "20px", fontWeight: "500", color: "#FFF8F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
                     Register
                 </div>
 
