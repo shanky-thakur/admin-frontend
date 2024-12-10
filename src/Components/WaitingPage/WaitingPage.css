@@ -1,0 +1,24 @@
+.waitingButton {
+    cursor: pointer;
+    width: 450px;
+    height: 65px;
+    border-radius: 25px;
+    background: #FFD600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Lufga', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.waitingButton:hover {
+    background: #FFC300;
+    /* Slightly darker yellow */
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+}

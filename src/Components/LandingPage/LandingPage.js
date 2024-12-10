@@ -1,4 +1,5 @@
 import React from 'react';
+import "./LandingPage.css"
 import { useNavigate } from 'react-router-dom';
 import img from "../../assets/images/Untitled design.png";
 import img3 from "../../assets/images/ellipse-69.png";
@@ -23,7 +24,7 @@ const LandingPage2 = () => {
                 </div>
 
                 <div style={{ width: "100%", height: "10%" }}>
-                    <div style={{ color: "#374957", fontFamily: "Lufga", fontSize: "21px", fontWeight: "500", marginBottom: "-3%" }}>
+                    <div style={{ color: "#374957", fontFamily: "Lufga", fontSize: "21px", fontWeight: "500", marginBottom: "-2%" }}>
                         Get Started now
                     </div>
                     <p style={{ color: "#838A8F", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400" }}>Enter your details to access your account</p>
@@ -31,10 +32,10 @@ const LandingPage2 = () => {
 
                 <div style={{ width: "100%", height: "50%", background: "transparent", display: "flex", justifyContent: "space-between", flexDirection: "column", alignItems: "center" }}>
 
-                    <div style={{ borderRadius: "20px", width: "100%", height: "20%", background: "#FFF", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-between", border: "1px solid #EAEAEA" }}>
+                    <div style={{ borderRadius: "20px", width: "100%", height: "20%", background: "#FFF", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-between" }}>
 
                         <div style={{ width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                            <textarea placeholder='School Name' style={{ height: "90%", width: "100%", resize: "none", background: "transparent", alignContent: "center", paddingLeft: "20px", fontFamily: "Lufga", fontWeight: "400", fontSize: "14px", borderRadius: "20px", border: "1px solid #EAEAEA" }}></textarea>
+                            <textarea placeholder='School Name' style={{ height: "90%", width: "100%", resize: "none", background: "transparent", alignContent: "center", paddingLeft: "20px", fontFamily: "Lufga", fontWeight: "400", fontSize: "14px", borderRadius: "20px",  border: "1px solid #EAEAEA" }}></textarea>
                         </div>
 
                     </div>
@@ -46,15 +47,15 @@ const LandingPage2 = () => {
                         </div>
 
                         <div style={{ background: "#FFF", borderRadius: "20px", width: "45%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                            <textarea placeholder='Pin Code' style={{ height: "90%", width: "100%", resize: "none", background: "transparent", alignContent: "center", paddingLeft: "20px", fontFamily: "Lufga", fontWeight: "400", fontSize: "14px", borderRadius: "20px", border: "1px solid #EAEAEA" }}></textarea>
+                            <textarea placeholder='Pin Code' style={{ height: "90%", width: "100%", resize: "none", background: "transparent", alignContent: "center", paddingLeft: "20px", fontFamily: "Lufga", fontWeight: "400", fontSize: "14px", borderRadius: "20px",  border: "1px solid #EAEAEA" }}></textarea>
                         </div>
 
                     </div>
 
-                    <div style={{ borderRadius: "20px", width: "100%", height: "20%", background: "#FFF", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-between", border: "1px solid #EAEAEA" }}>
+                    <div style={{ borderRadius: "20px", width: "100%", height: "20%", background: "#FFF", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-between" }}>
 
                         <div style={{ width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                            <textarea placeholder='School Email' style={{ height: "90%", width: "100%", resize: "none", background: "transparent", alignContent: "center", paddingLeft: "20px", fontFamily: "Lufga", fontWeight: "400", fontSize: "14px", borderRadius: "20px", border: "1px solid #EAEAEA" }}></textarea>
+                            <textarea placeholder='School Email' style={{ height: "90%", width: "100%", resize: "none", background: "transparent", alignContent: "center", paddingLeft: "20px", fontFamily: "Lufga", fontWeight: "400", fontSize: "14px", borderRadius: "20px",  border: "1px solid #EAEAEA" }}></textarea>
                         </div>
 
                     </div>
@@ -73,7 +74,7 @@ const LandingPage2 = () => {
 
                 </div>
 
-                <div onClick={() => navigate('/verification')} style={{ width: "100%", height: "10%", background: "#161616", borderRadius: "25px", fontFamily: "Lufga", fontSize: "20px", fontWeight: "500", color: "#FFF8F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <div className='registerButton' onClick={() => navigate('/verification')} >
                     Register
                 </div>
 

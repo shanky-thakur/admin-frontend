@@ -1,4 +1,5 @@
 import React from 'react';
+import "./WaitingPage.css";
 import { useNavigate } from 'react-router-dom';
 
 import img3 from "../../assets/images/ellipse-69.png";
@@ -20,7 +21,38 @@ const WaitingPage = () => {
                 <div style={{ color: "#F3F6FF", fontFamily: "Lufga", fontSize: "20px", fontWeight: "400" }}>Sit tight you are about to boost your</div>
                 <div style={{ color: "#F3F6FF", fontFamily: "Lufga", fontSize: "20px", fontWeight: "400" }}>School Efficiency.</div>
                 <div style={{ height: "120px" }}></div>
-                <div onClick={() => navigate('/dashboard')} style={{ width: "450px", height: "65px", borderRadius: "25px", background: "#FFD600", display: "flex", alignItems: "center", justifyContent: "center", color: "#000", fontFamily: "Lufga", fontSize: "24px", fontWeight: "400" }}>Back to Login</div>
+                <div
+                    className="waitingButton"
+                    onClick={() => navigate('/dashboard')}
+                    style={{
+                        cursor: "pointer",
+                        width: "450px",
+                        height: "65px",
+                        borderRadius: "25px",
+                        background: "#FFD600",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        color: "#000",
+                        fontFamily: "Lufga",
+                        fontSize: "24px",
+                        fontWeight: "400",
+                        transition: "all 0.3s ease-in-out",
+                    }}
+                    onMouseEnter={(e) => {
+                        e.currentTarget.style.background = "#FFC300";
+                        e.currentTarget.style.transform = "scale(1.05)";
+                        e.currentTarget.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+                    }}
+                    onMouseLeave={(e) => {
+                        e.currentTarget.style.background = "#FFD600";
+                        e.currentTarget.style.transform = "scale(1)";
+                        e.currentTarget.style.boxShadow = "none";
+                    }}
+                >
+                    Back to Login
+                </div>
+
             </div>
         </div>
     )
