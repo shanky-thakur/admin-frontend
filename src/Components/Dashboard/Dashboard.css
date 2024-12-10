@@ -1,0 +1,9 @@
+.element {
+    cursor: default;
+    border: "1px solid black";
+}
+
+.element:hover {
+    background: #F8F8F8;
+    transform: scale(1.05);
+}
