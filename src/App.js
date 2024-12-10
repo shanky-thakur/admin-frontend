@@ -8,6 +8,7 @@ import LoadingPage from './Components/LoadingPage/LoadingPage';
 import VerificationPage from './Components/VerificationPage/VerificationPage';
 import WaitingPage from './Components/WaitingPage/WaitingPage';
 import Dashboard from './Components/Dashboard/Dashboard';
+import HomePage from './Components/HomePage/HomePage';
 
 function App() {
 
@@ -28,7 +29,8 @@ function App() {
             <Route path="/" element={< LandingPage />} ></Route>
             <Route path="/verification" element={< VerificationPage />}></Route>
             <Route path="/waiting" element={< WaitingPage />}></Route>
-            <Route path="/dashboard" element={< Dashboard />}></Route>
+            <Route path="/employee" element={< Dashboard />}></Route>
+            <Route path="/homepage" element={< HomePage />}></Route>
           </Routes>
         )}
     </Router>

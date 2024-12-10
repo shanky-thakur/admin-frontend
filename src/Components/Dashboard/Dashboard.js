@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./Dashboard.css";
 
 import avatar from "../../assets/images/avatar.png";
@@ -10,6 +11,8 @@ import img4 from "../../assets/images/group-1.png";
 import img5 from "../../assets/images/ellipse-1385.svg";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+
   const studentData = [
     { name: "arav anand", rollNumber: "010", regNumber: "89461334684" },
     { name: "arav anand", rollNumber: "010", regNumber: "89461334684" },
@@ -81,8 +84,8 @@ const Dashboard = () => {
       >
         <div
           style={{
-            width: "20%", // Responsive image container width
-            height: "100%", // Responsive image height
+            width: "20%",
+            height: "100%",
             flexShrink: "0",
             borderRadius: "50%",
             display: "flex",
@@ -97,7 +100,7 @@ const Dashboard = () => {
             style={{
               width: "100%",
               height: "100%",
-              objectFit: "contain", // Maintain aspect ratio
+              objectFit: "contain",
             }}
           />
         </div>
@@ -141,12 +144,12 @@ const Dashboard = () => {
 
         <div style={{ width: "100%", height: "60%", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center" }}>
           <div className='element' style={{ width: "70%", height: "10%", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "20px", border: "none" }}>
-            <div className='innerElement' style={{ fontFamily: "Lufga", fontSize: "16px", color: "#374957", fontWeight: "400" }}>
+            <div onClick={() => navigate('/homepage')} className='innerElement' style={{ fontFamily: "Lufga", fontSize: "16px", color: "#374957", fontWeight: "400" }}>
               Dashboard
             </div>
           </div>
           <div className='element' style={{ background: "#101010", width: "70%", height: "10%", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "20px", border: "none" }}>
-            <div className='innerElement' style={{ fontFamily: "Lufga", fontSize: "16px", color: "#FFF", fontWeight: "400" }}>
+            <div onClick={() => navigate('/employee')} className='innerElement' style={{ fontFamily: "Lufga", fontSize: "16px", color: "#FFF", fontWeight: "400" }}>
               Employee
             </div>
           </div>

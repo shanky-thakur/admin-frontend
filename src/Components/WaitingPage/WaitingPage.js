@@ -23,7 +23,7 @@ const WaitingPage = () => {
                 <div style={{ height: "120px" }}></div>
                 <div
                     className="waitingButton"
-                    onClick={() => navigate('/dashboard')}
+                    onClick={() => navigate('/homepage')}
                     style={{
                         cursor: "pointer",
                         width: "450px",
