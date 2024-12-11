@@ -10,7 +10,6 @@ import RevenueGraph from "./RevenueGraph";
 import img3 from "../../assets/images/ellipse-69.png";
 import img4 from "../../assets/images/group-1.png";
 import img5 from "../../assets/images/ellipse-1385.svg";
-import dashboard from "../../assets/images/dashboardPic.svg";
 import bellCover from "../../assets/images/bellCover.svg";
 import bell from '../../assets/images/notification.jpg';
 
@@ -86,6 +85,7 @@ const HomePage = () => {
                     </div>
 
                 </div>
+
                 <div style={{ width: "80%", height: "100%", display: "flex", justifyContent: "space-between", flexDirection: "column" }}>
                     <div style={{ width: "100%", height: "10%" }}>
                         <div style={{ width: "100%", height: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
@@ -97,7 +97,7 @@ const HomePage = () => {
                                 <div style={{ width: "15%", height: "80%", backgroundImage: `url(${bellCover})`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "contain", display: "flex", justifyContent: "center", alignItems: "center" }}>
                                     <img src={bell} alt='bell' style={{ width: "50%", height: "50%" }}></img>
                                 </div>
-                                <div className='registerButton'>
+                                <div className='newAdmissionButton'>
                                     New Admission
                                 </div>
                             </div>

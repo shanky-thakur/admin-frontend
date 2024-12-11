@@ -7,15 +7,6 @@
     font-weight: 600px;
 }
 
-.addEmployee:hover {
-    background: #FFC300;
-    /* Slightly darker yellow */
-    transform: scale(1.05);
-    /* Slight zoom effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Add shadow */
-}
-
 .expand:active {
     transform: rotate(-90deg);
 }
@@ -42,4 +33,35 @@
     .employee-cards-container {
         grid-template-columns: 1fr;
     }
+}
+
+.addEmployeeButton {
+    color: #FFF;
+    font-family: Lufga;
+    font-weight: 300;
+    font-size: 19px;
+}
+
+.addEmployee {
+    width: 35%;
+    height: 100%;
+    border-radius: 25px;
+    border: 1px solid #EAEAEA;
+    background: #FFD600;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.innerAdd {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.addEmployee:hover {
+    background: #161616;
+    transform: scale(1.01);
 }

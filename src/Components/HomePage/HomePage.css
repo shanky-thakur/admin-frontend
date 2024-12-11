@@ -1,4 +1,4 @@
-.registerButton {
+.newAdmissionButton {
     width: 70%;
     height: 80%;
     background: #FFD600;
@@ -14,7 +14,7 @@
     transition: background 0.3s ease, transform 0.2s ease; /* Smooth transition */
 }
 
-.registerButton:hover {
+.newAdmissionButton:hover {
     background:  #161616;
     transform: scale(1.01);
 }
