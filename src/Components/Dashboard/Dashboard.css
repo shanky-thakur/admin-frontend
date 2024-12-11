@@ -3,8 +3,8 @@
     border: "1px solid black";
 }
 
-.element:hover {
-    transform: scale(1.15);
+.innerElement:hover {
+    font-weight: 600px;
 }
 
 .addEmployee:hover {
