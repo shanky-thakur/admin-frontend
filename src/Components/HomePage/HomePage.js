@@ -109,7 +109,7 @@ const HomePage = () => {
                                 <div style={{ width: "35%", height: "100%", background: "#FFF", borderRadius: "29px", border: "1px solid #EAEAEA", display: "flex", justifyContent: "center", alignItems: "center" }}>
                                     <DataCard />
                                 </div>
-                                <div style={{ width: "62%", height: "100%", background: "#FFF", borderRadius: "29px", border: "1px solid #EAEAEA", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                <div style={{ width: "62%", height: "100%", borderRadius: "29px", border: "1px solid #EAEAEA", display: "flex", justifyContent: "center", alignItems: "center", background: "#101011" }}>
                                     <Attendance />
                                 </div>
                             </div>
