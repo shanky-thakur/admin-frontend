@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./HomePage.css";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, CartesianGrid } from "recharts";
+import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer, Cell } from "recharts";
 
 import left from "../../assets/images/left.svg";
 import right from "../../assets/images/right.svg";

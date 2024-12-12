@@ -229,13 +229,13 @@ const Dashboard = () => {
             </div>
             <div style={{ width: "45%", height: "80%", borderRadius: "25px", border: "1px solid #EAEAEA", background: "#FFF", display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
               <div style={{ width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <textarea placeholder='Search Staff' style={{ border: "none", background: "transparent", resize: "none", fontFamily: "Lufga", fontSize: "15px", fontWeight: "400", alignContent: "center", width: "100%", borderRadius: "25px", paddingLeft: "10px", paddingLeft: "20px" }}></textarea>
+                <textarea placeholder='Search Staff' style={{ border: "none", background: "transparent", resize: "none", fontFamily: "Lufga", fontSize: "15px", fontWeight: "400", alignContent: "center", width: "100%", borderRadius: "25px", paddingLeft: "20px" }}></textarea>
               </div>
             </div>
           </div>
 
           <div style={{ width: "100%", height: "70%", display: "flex", alignItems: "center", justifyContent: "center", overflow: "auto" }}>
-            <div onClick={() => navigate('/employee/rofile')} className="employee-cards-container" style={{ display: "grid", gridTemplateColumns: "repeat(4, 2fr)", gap: "20px", width: "90%", height: "90%" }}>
+            <div onClick={() => navigate('/employee/profile')} className="employee-cards-container" style={{ display: "grid", gridTemplateColumns: "repeat(4, 2fr)", gap: "20px", width: "90%", height: "90%" }}>
               {studentData.map((student, index) => (
                 <EmployeeCard
                   key={index}
