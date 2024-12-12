@@ -32,7 +32,7 @@ function App() {
             <Route path="/waiting" element={< WaitingPage />}></Route>
             <Route path="/employee" element={< Dashboard />}></Route>
             <Route path="/homepage" element={< HomePage />}></Route>
-            <Route path="/profile" element={< EmployeeProfile />} ></Route>
+            <Route path="/employee/rofile" element={< EmployeeProfile />} ></Route>
           </Routes>
         )}
     </Router>
