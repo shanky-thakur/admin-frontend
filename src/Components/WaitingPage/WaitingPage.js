@@ -14,20 +14,21 @@ const WaitingPage = () => {
 
                 <div style={{ height: "10%", width: "178px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                     <div style={{ width: "40px", height: "40px", backgroundImage: `url(${img3})`, backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat", display: "flex", alignItems: "center", justifyContent: "center" }}><img src={img4} alt='img'></img></div>
-                    <div style={{ color: "#FFF", fontFamily: "Lufga", fontSize: "32px", fontWeight: "600" }}>Sheshya</div>
+                    <div style={{ color: "#FFF", fontFamily: "Lufga", fontSize: "30px", fontWeight: "400" }}>Sheshya</div>
                 </div>
-                <div style={{ height: "25px" }}></div>
-                <div style={{ color: "#F3F6FF", fontFamily: "Lufga", fontSize: "35px", fontWeight: "700" }}>Our Team will contact you in a while</div>
+                <div style={{ height: "35px" }}></div>
+                <div style={{ color: "#F3F6FF", fontFamily: "Lufga", fontSize: "32px", fontWeight: "500" }}>Our Team will contact you in a while</div>
+                <div style={{ height: "20px" }}></div>
                 <div style={{ color: "#F3F6FF", fontFamily: "Lufga", fontSize: "20px", fontWeight: "400" }}>Sit tight you are about to boost your</div>
                 <div style={{ color: "#F3F6FF", fontFamily: "Lufga", fontSize: "20px", fontWeight: "400" }}>School Efficiency.</div>
-                <div style={{ height: "120px" }}></div>
+                <div style={{ height: "60px" }}></div>
                 <div
                     className="waitingButton"
                     onClick={() => navigate('/homepage')}
                     style={{
                         cursor: "pointer",
-                        width: "450px",
-                        height: "65px",
+                        width: "350px",
+                        height: "55px",
                         borderRadius: "25px",
                         background: "#FFD600",
                         display: "flex",

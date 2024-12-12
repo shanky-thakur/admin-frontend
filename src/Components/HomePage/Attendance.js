@@ -1,17 +1,25 @@
 import React from 'react';
+import { useState } from 'react';
 import down from "../../assets/images/down-vector.svg";
 import pie from "../../assets/images/pie-sections.svg";
 
 const Attendance = () => {
+  const [profile, setProfile] = useState("Employee");
+
+  const changeProfile = () => {
+    if(profile === "Employee") setProfile("Students");
+    else setProfile("Employee");
+  }
+
   return (
     <div style={{ height: "90%", width: "90%", display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
       <div style={{ height: "20%", width: "100%", display: "flex", justifyContent: "space-between", alignItems: 'center' }}>
 
         <div style={{ height: "80%", width: "35%", color: "#FFF", fontFamily: "Lufga", fontSize: "15px", fontWeight: "500", display: "flex", justifyContent: "center", alignItems: "center" }}>Attendance</div>
 
-        <div style={{ height: "100%", width: "45%", border: "1px solid #EAEAEA", borderRadius: "25px", display: "flex", alignItems: "center", justifyContent: "space-evenly" }}>
+        <div onClick={changeProfile} style={{ height: "100%", width: "45%", border: "1px solid #EAEAEA", borderRadius: "25px", display: "flex", alignItems: "center", justifyContent: "space-evenly" }}>
           <div style={{ width: "50%", height: "90%", color: "#FFF", fontFamily: "Lufga", fontWeight: "400", fontSize: "14px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-            Employee
+            {profile}
           </div>
           <div style={{ width: "10%", height: "70%", display: "flex", justifyContent: "center", alignItems: 'center' }}>
             <img src={down} alt='down' style={{ width: "80%" }}></img>

@@ -62,11 +62,10 @@ const RevenueGraph = () => {
         <div style={{ width: "100%", height: "80%", display: "flex", alignItems: "center", justifyContent: "left" }}>
 
 
-          <div style={{ width: "90%", height: "100%", display: "flex", alignItems: "center", justifyContent: "left" }}>
+          <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "left" }}>
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={currentData} margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
                 <XAxis dataKey="month" />
-                <YAxis tick={false} />
                 <Tooltip formatter={(value) => (value === null ? "NA" : `${value} Lakhs`)} contentStyle={{ borderRadius: "20px" }} />
                 <Bar dataKey="value" radius={[15, 15, 0, 0]} barSize={35}>
                   {currentData.map((entry, index) => (
