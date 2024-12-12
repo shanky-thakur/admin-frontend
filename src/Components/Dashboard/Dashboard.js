@@ -235,7 +235,7 @@ const Dashboard = () => {
           </div>
 
           <div style={{ width: "100%", height: "70%", display: "flex", alignItems: "center", justifyContent: "center", overflow: "auto" }}>
-            <div className="employee-cards-container" style={{ display: "grid", gridTemplateColumns: "repeat(4, 2fr)", gap: "20px", width: "90%", height: "90%" }}>
+            <div onClick={() => navigate('/profile')} className="employee-cards-container" style={{ display: "grid", gridTemplateColumns: "repeat(4, 2fr)", gap: "20px", width: "90%", height: "90%" }}>
               {studentData.map((student, index) => (
                 <EmployeeCard
                   key={index}

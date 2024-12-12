@@ -9,6 +9,7 @@ import VerificationPage from './Components/VerificationPage/VerificationPage';
 import WaitingPage from './Components/WaitingPage/WaitingPage';
 import Dashboard from './Components/Dashboard/Dashboard';
 import HomePage from './Components/HomePage/HomePage';
+import EmployeeProfile from './Components/EmployeeProfile/EmployeeProfile';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
             <Route path="/waiting" element={< WaitingPage />}></Route>
             <Route path="/employee" element={< Dashboard />}></Route>
             <Route path="/homepage" element={< HomePage />}></Route>
+            <Route path="/profile" element={< EmployeeProfile />} ></Route>
           </Routes>
         )}
     </Router>
