@@ -5,7 +5,7 @@ import imagePic from "../../assets/images/profileImage.svg";
 import img3 from "../../assets/images/ellipse-69.png";
 import img4 from "../../assets/images/group-1.png";
 import img5 from "../../assets/images/ellipse-1385.svg";
-import edit from "../../assets/images/edit.svg";
+import down from "../../assets/images/blackdownvector.svg";
 
 const EmployeeAttendance = () => {
     const navigate = useNavigate();
@@ -144,26 +144,80 @@ const EmployeeAttendance = () => {
                                 <div style={{ width: "95%", height: "15%", display: "flex", justifyContent: "space-around", alignItems: "center" }}>
 
                                     <div style={{ width: "40%", height: "80%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontSize: "15px", fontWeight: "400" }}>
-                                        Personal Information
+                                        Attendance
                                     </div>
 
                                     <div style={{ width: "20%", height: "90%" }}></div>
 
-                                    <div style={{ width: "20%", height: "90%", border: "1px solid #EAEAEA", borderRadius: "18px", display: "flex", justifyContent: "space-evenly", alignItems: "center" }}>
+                                    <div style={{ width: "30%", height: "90%", border: "1px solid #EAEAEA", borderRadius: "18px", display: "flex", justifyContent: "space-evenly", alignItems: "center" }}>
                                         <div style={{ width: "10%" }}></div>
 
-                                        <div style={{ width: "40%", height: "70%", display: "flex", justifyContent: "center", alignItems: "center", color: "#000", fontSize: "14px", fontFamily: "Lufga", fontWeight: "400" }}>
-                                            Edit
+                                        <div style={{ width: "60%", height: "70%", display: "flex", justifyContent: "center", alignItems: "center", color: "#000", fontSize: "14px", fontFamily: "Lufga", fontWeight: "400" }}>
+                                            February
                                         </div>
 
-                                        <div style={{ width: "15%", height: "30%", backgroundImage: `url(${edit})`, backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat" }}></div>
+                                        <div style={{ width: "15%", height: "20%", backgroundImage: `url(${down})`, backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat" }}></div>
 
                                         <div style={{ width: "10%" }}></div>
                                     </div>
 
                                 </div>
 
-                                <div style={{ width: "95%", height: "70%", background: "blue" }}>
+                                <div style={{ width: "95%", height: "70%", display: "flex", justifyContent: "space-evenly", alignItems: "center" }}>
+
+                                    <div style={{ width: "30%", height: "75%", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid black" }}>
+                                    </div>
+
+                                    <div style={{ width: "3%", height: "100%" }}></div>
+
+                                    <div style={{ width: "55%", height: "100%", display: "flex", alignItems: "center", justifyContent: "space-evenly" }}>
+
+                                        <div style={{ width: "50%", height: "90%" }}>
+                                            <div style={{ width: "100%", height: "10%" }}></div>
+
+                                            <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontSize: "11px", fontWeight: "400" }}>
+                                                Total Present
+                                            </div>
+                                            <div style={{ width: "100%", height: "1%" }}></div>
+                                            <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400" }}>
+                                                24 Days
+                                            </div>
+
+                                            <div style={{ width: "100%", height: "10%" }}></div>
+                                            <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontSize: "11px", fontWeight: "400" }}>
+                                                Total Absent
+                                            </div>
+                                            <div style={{ width: "100%", height: "1%" }}></div>
+                                            <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400" }}>
+                                                3 Days
+                                            </div>
+
+                                            <div style={{ width: "100%", height: "10%" }}></div>
+                                            <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontSize: "11px", fontWeight: "400" }}>
+                                                On Leave
+                                            </div>
+                                            <div style={{ width: "100%", height: "1%" }}></div>
+                                            <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400" }}>
+                                                2 Days
+                                            </div>
+
+                                        </div>
+
+                                        <div style={{ width: "50%", height: "90%" }}>
+                                            <div style={{ width: "100%", height: "10%" }}></div>
+
+                                            <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontSize: "11px", fontWeight: "400" }}>
+                                                Last Check-in
+                                            </div>
+
+                                            <div style={{ width: "100%", height: "1%" }}></div>
+                                            <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400" }}>
+                                                2 Days
+                                            </div>
+
+                                        </div>
+
+                                    </div>
 
                                 </div>
 
