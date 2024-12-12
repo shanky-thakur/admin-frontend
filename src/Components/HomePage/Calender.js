@@ -80,7 +80,7 @@ const Calender = () => {
 
   const NoticeCard = ({ title, info, time, background }) => {
     return (
-      <div style={{ width: "95%", height: "40px", border: "1px solid #EAEAEA", borderRadius: "23px", gap: "2%", display: "flex", alignItems: "center", justifyContent: "space-between", background: `${background}` }}>
+      <div style={{ width: "95%", height: "40px", border: "1px solid #EAEAEA", borderRadius: "23px", gap: "2%", display: "flex", alignItems: "center", justifyContent: "space-between", background: `${background}`, marginBottom: "5px" }}>
 
         <div style={{ width: "2%", height: "90%" }}></div>
 
