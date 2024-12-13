@@ -6,6 +6,7 @@ import img3 from "../../assets/images/ellipse-69.png";
 import img4 from "../../assets/images/group-1.png";
 import img5 from "../../assets/images/ellipse-1385.svg";
 import down from "../../assets/images/blackdownvector.svg";
+import pieChart from "../../assets/images/Frame_1261151750.png";
 
 const EmployeeAttendance = () => {
     const navigate = useNavigate();
@@ -165,7 +166,11 @@ const EmployeeAttendance = () => {
 
                                 <div style={{ width: "95%", height: "70%", display: "flex", justifyContent: "space-evenly", alignItems: "center" }}>
 
-                                    <div style={{ width: "30%", height: "75%", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid black" }}>
+                                    <div style={{ width: "30%", height: "75%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", backgroundImage: `url(${pieChart})`, backgroundSize: "contain", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
+
+                                        <div style={{ height: "15%", width: "48%", color: "#374957", fontFamily: "Lufga", fontWeight: "600", fontSize: "17px", display: "flex", alignItems: "baseline", justifyContent: "center" }}>24</div>
+                                        <div style={{ height: "15%", width: "48%", color: "#374957", fontFamily: "Lufga", fontWeight: "400", fontSize: "10px", display: "flex", alignItems: "center", justifyContent: "center" }}>Total Present</div>
+
                                     </div>
 
                                     <div style={{ width: "3%", height: "100%" }}></div>
