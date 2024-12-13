@@ -107,7 +107,7 @@ const EmployeeAttendance = () => {
 
                             <div style={{ width: "90%", height: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}></div>
 
-                            <div style={{ width: "80%", height: "10%", display: "flex", alignItems: "center", justifyContent: "center", color: "#F00", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400" }}>
+                            <div onClick={() => navigate('/employee/remove')} style={{ width: "80%", height: "10%", display: "flex", alignItems: "center", justifyContent: "center", color: "#F00", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400" }}>
                                 Remove Teacher
                             </div>
 

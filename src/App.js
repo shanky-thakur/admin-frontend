@@ -11,6 +11,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import HomePage from './Components/HomePage/HomePage';
 import EmployeeProfile from './Components/EmployeeProfile/EmployeeProfile';
 import EmployeeAttendance from './Components/EmployeeProfile/EmployeeAttendance';
+import RemoveTeacher from './Components/EmployeeProfile/RemoveTeacher';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
             <Route path="/homepage" element={< HomePage />}></Route>
             <Route path="/employee/profile" element={< EmployeeProfile />} ></Route>
             <Route path="/employee/attendance" element={< EmployeeAttendance />} ></Route>
+            <Route path="/employee/remove" element={< RemoveTeacher />}></Route>
           </Routes>
         )}
     </Router>
