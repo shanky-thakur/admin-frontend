@@ -5,10 +5,9 @@ import imagePic from "../../assets/images/profileImage.svg";
 import img3 from "../../assets/images/ellipse-69.png";
 import img4 from "../../assets/images/group-1.png";
 import img5 from "../../assets/images/ellipse-1385.svg";
-import edit from "../../assets/images/edit.svg";
 import down from "../../assets/images/vector-down-black.svg";
 
-const GuardianInfo = () => {
+const ExtraCurricular = () => {
     const navigate = useNavigate();
 
     return (
@@ -86,7 +85,7 @@ const GuardianInfo = () => {
                 <div style={{ width: "80%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center" }}>
 
                     <div style={{ width: "90%", height: '8%', color: "#374957", fontFamily: "Lufga", fontWeight: "600", fontSize: "22px", display: "flex", alignItems: "center" }}>
-                        Profile
+                        Extra Curricular
                     </div>
 
                     <div style={{ width: "90%", height: '78%', display: "flex", alignItems: "center", justifyContent: "space-between" }}>
@@ -95,14 +94,12 @@ const GuardianInfo = () => {
 
                             <div style={{ width: "90%", height: "50%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around" }}>
 
-                                <div style={{ width: "90%", height: "20%", borderRadius: "18px", background: "#101010", color: '#FFF', fontFamily: "Lufga", fontWeight: "400", fontSize: "14px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                    Student Detail
-                                </div>
+                                <div onClick={() => navigate('/student/profile')} style={{ width: "90%", height: "20%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", display: "flex", alignItems: "center", justifyContent: "center" }}>Student Detail</div>
 
                                 <div style={{ width: "90%", height: "20%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", display: "flex", alignItems: "center", justifyContent: "center" }}>Performance</div>
                                 <div onClick={() => navigate('/student/attendance')} style={{ width: "90%", height: "20%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", display: "flex", alignItems: "center", justifyContent: "center" }}>Attendance</div>
                                 <div onClick={() => navigate('/student/feePayment')} style={{ width: "90%", height: "20%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", display: "flex", alignItems: "center", justifyContent: "center" }}>Fees & Payment</div>
-                                <div onClick={() => navigate('/student/extraCurricular/clubs')} style={{ width: "90%", height: "20%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", display: "flex", alignItems: "center", justifyContent: "center" }}>Extra Curricular</div>
+                                <div onClick={() => navigate('/student/extraCurricular/clubs')} style={{ width: "90%", height: "20%", borderRadius: "18px", background: "#101010", color: '#FFF', fontFamily: "Lufga", fontWeight: "400", fontSize: "14px", display: "flex", alignItems: "center", justifyContent: "center" }}>Extra Curricular</div>
 
                             </div>
 
@@ -146,34 +143,22 @@ const GuardianInfo = () => {
                                 <div style={{ width: "95%", height: "15%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
 
                                     <div style={{ width: "40%", height: "80%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontSize: "15px", fontWeight: "400" }}>
-                                        Personal Information
+                                        Clubs and Society
                                     </div>
 
                                     <div style={{ width: "10%", height: "80%" }}></div>
 
-                                    <div style={{ width: "50%", height: "80%", display: "flex", alignItems: "center", justifyContent: "space-evenly" }}>
+                                    <div style={{ width: "45%", height: "80%", display: "flex", alignItems: "center", justifyContent: "end" }}>
 
-                                        <div style={{ width: "35%", height: "90%", border: "1px solid #EAEAEA", borderRadius: "18px", display: "flex", justifyContent: "space-evenly", alignItems: "center" }}>
+                                        <div style={{ width: "95%", height: "90%", border: "1px solid #EAEAEA", borderRadius: "18px", display: "flex", justifyContent: "space-evenly", alignItems: "center" }}>
                                             <div style={{ width: "10%" }}></div>
 
-                                            <div style={{ width: "40%", height: "70%", display: "flex", justifyContent: "center", alignItems: "center", color: "#000", fontSize: "14px", fontFamily: "Lufga", fontWeight: "400" }}>
-                                                Edit
-                                            </div>
-
-                                            <div style={{ width: "15%", height: "30%", backgroundImage: `url(${edit})`, backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat" }}></div>
-
-                                            <div style={{ width: "10%" }}></div>
-                                        </div>
-
-                                        <div style={{ width: "45%", height: "90%", border: "1px solid #EAEAEA", borderRadius: "18px", display: "flex", justifyContent: "space-evenly", alignItems: "center" }}>
-                                            <div style={{ width: "10%" }}></div>
-
-                                            <div onClick={() => navigate('/student/profile')} style={{ width: "50%", height: "70%", display: "flex", justifyContent: "center", alignItems: "center", color: "#000", fontSize: "14px", fontFamily: "Lufga", fontWeight: "400" }}>
-                                                Guardian
+                                            <div style={{ width: "90%", height: "70%", display: "flex", justifyContent: "center", alignItems: "center", color: "#000", fontSize: "14px", fontFamily: "Lufga", fontWeight: "400" }}>
+                                                Clubs and Society
                                             </div>
                                             <div style={{ width: "10%" }}></div>
 
-                                            <div style={{ width: "10%", height: "30%", backgroundImage: `url(${down})`, backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat" }}></div>
+                                            <div style={{ width: "10%", height: "20%", backgroundImage: `url(${down})`, backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat" }}></div>
 
                                             <div style={{ width: "10%" }}></div>
                                         </div>
@@ -188,58 +173,34 @@ const GuardianInfo = () => {
                                     <div style={{ width: "45%", height: "95%" }}>
 
                                         <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontWeight: "400", fontSize: "13px" }}>
-                                            Guardian Name
+                                            Debate Club
                                         </div>
                                         <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontWeight: "400", fontSize: "15px" }}>
-                                            Daddy Wayne
+                                            2018 - 2020
                                         </div>
 
                                         <div style={{ width: "100%", height: "15%" }}></div>
 
                                         <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontWeight: "400", fontSize: "13px" }}>
-                                            Email
+                                            School Newspaper
                                         </div>
                                         <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontWeight: "400", fontSize: "15px" }}>
-                                            pitajiwayne@gmail.com
+                                            2019 - 2020
                                         </div>
 
-                                        <div style={{ width: "100%", height: "15%" }}></div>
-
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontWeight: "400", fontSize: "13px" }}>
-                                            Occupation
-                                        </div>
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontWeight: "400", fontSize: "15px" }}>
-                                            Vasuli
-                                        </div>
 
                                     </div>
 
                                     <div style={{ width: "50%", height: "95%" }}>
 
                                         <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontWeight: "400", fontSize: "13px" }}>
-                                            Phone Number
+                                            Model UN
                                         </div>
                                         <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontWeight: "400", fontSize: "15px" }}>
-                                            +91 81034 14654
+                                            2020 - Present
                                         </div>
 
-                                        <div style={{ width: "100%", height: "15%" }}></div>
-
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontWeight: "400", fontSize: "13px" }}>
-                                            Emergency Contact
-                                        </div>
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontWeight: "400", fontSize: "15px" }}>
-                                            +91 81034 14654
-                                        </div>
-
-                                        <div style={{ width: "100%", height: "15%" }}></div>
-
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontWeight: "400", fontSize: "13px" }}>
-                                            Address
-                                        </div>
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontWeight: "400", fontSize: "13px" }}>
-                                            A-302, Kamal Vihar, Noida, 43212
-                                        </div>
+                                        
 
                                     </div>
 
@@ -263,4 +224,4 @@ const GuardianInfo = () => {
     )
 }
 
-export default GuardianInfo
+export default ExtraCurricular

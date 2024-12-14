@@ -19,6 +19,9 @@ import GuardianInfo from './Components/Students/GuardianInfo';
 import StudentAttendance from './Components/Students/StudentAttendance';
 import StudentFee from './Components/Students/StudentFee';
 import AllFeeStudent from './Components/Students/AllFeeStudent';
+import ExtraCurricular from './Components/Students/ExtraCurricular';
+import Sports from "./Components/Students/Sports";
+import Achievements from './Components/Students/Achievements';
 
 function App() {
 
@@ -51,6 +54,9 @@ function App() {
             <Route path="/student/attendance" element={< StudentAttendance />} ></Route>
             <Route path="/student/feePayment" element={< StudentFee />} ></Route>
             <Route path="/student/fee/all" element={< AllFeeStudent />} ></Route>
+            <Route path="/student/extraCurricular/clubs" element={< ExtraCurricular />} ></Route>
+            <Route path="/student/extraCurricular/sports" element={< Sports />} ></Route>
+            <Route path="/student/extraCurricular/achievements" element={< Achievements />} ></Route>
           </Routes>
         )}
     </Router>
