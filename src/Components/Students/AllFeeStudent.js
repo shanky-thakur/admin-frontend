@@ -5,10 +5,63 @@ import imagePic from "../../assets/images/profileImage.svg";
 import img3 from "../../assets/images/ellipse-69.png";
 import img4 from "../../assets/images/group-1.png";
 import img5 from "../../assets/images/ellipse-1385.svg";
-import edit from "../../assets/images/edit.svg";
+import down from "../../assets/images/blackdownvector.svg";
 
-const EmployeeProfile = () => {
+const AllFeeStudent = () => {
     const navigate = useNavigate();
+
+    const Payments = [
+        {
+            month: "November",
+            time: "NA",
+            status: "Unpaid"
+        },
+        {
+            month: "November",
+            time: "12,500/- on 23-10-2024",
+            status: "Paid"
+        },
+        {
+            month: "November",
+            time: "12,500/- on 23-10-2024",
+            status: "Paid"
+        },
+        {
+            month: "November",
+            time: "12,500/- on 23-10-2024",
+            status: "Paid"
+        },
+        {
+            month: "November",
+            time: "12,500/- on 23-10-2024",
+            status: "Paid"
+        },
+        {
+            month: "November",
+            time: "12,500/- on 23-10-2024",
+            status: "Paid"
+        },
+    ];
+
+    const PaymentCard = ({ month, time, status }) => {
+        return (
+            <div style={{ width: "98%", height: "40px", border: "1px solid #EAEAEA", borderRadius: "20px", display: "flex", alignItems: "center", justifyContent: "space-evenly", background: "#F8F8F8" }}>
+
+                <div style={{ width: "30%", height: "90%", display: "flex", alignItems: "center", justifyContent: "center", color: "#000", fontFamily: "Lufga", fontSize: "12px", fontWeight: "400" }}>
+                    {month}
+                </div>
+
+                <div style={{ width: "40%", height: "90%", display: "flex", alignItems: "center", justifyContent: "center", color: "#838A8F", fontFamily: "Lufga", fontSize: "12px", fontWeight: "300" }}>
+                    {time}
+                </div>
+
+                <div style={{ width: "20%", height: "90%", display: "flex", alignItems: "center", justifyContent: "center", color: status === "Paid" ? "#838A8F" : "#F00", fontFamily: "Lufga", fontSize: "12px", fontWeight: "300" }}>
+                    {status}
+                </div>
+
+            </div>
+        )
+    }
 
     return (
         <div style={{ width: "80vw", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -36,13 +89,13 @@ const EmployeeProfile = () => {
                                     Dashboard
                                 </div>
                             </div>
-                            <div className='element' style={{ background: "#101010", width: "70%", height: "10%", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "20px", border: "none" }}>
-                                <div onClick={() => navigate('/employee')} className='innerElement' style={{ fontFamily: "Lufga", fontSize: "16px", color: "#FFF", fontWeight: "400" }}>
+                            <div className='element' style={{ width: "70%", height: "10%", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "20px", border: "none" }}>
+                                <div onClick={() => navigate('/employee')} className='innerElement' style={{ fontFamily: "Lufga", fontSize: "16px", color: "#374957", fontWeight: "400" }}>
                                     Employee
                                 </div>
                             </div>
-                            <div onClick={() => navigate('/students')} className='element' style={{ width: "70%", height: "10%", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "20px", border: "none" }}>
-                                <div className='innerElement' style={{ fontFamily: "Lufga", fontSize: "16px", color: "#374957", fontWeight: "400" }}>
+                            <div onClick={() => navigate('/students')} className='element' style={{ background: "#101010", width: "70%", height: "10%", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "20px", border: "none" }}>
+                                <div className='innerElement' style={{ fontFamily: "Lufga", fontSize: "16px", color: "#FFF", fontWeight: "400" }}>
                                     Students
                                 </div>
                             </div>
@@ -85,28 +138,28 @@ const EmployeeProfile = () => {
                 <div style={{ width: "80%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center" }}>
 
                     <div style={{ width: "90%", height: '8%', color: "#374957", fontFamily: "Lufga", fontWeight: "600", fontSize: "22px", display: "flex", alignItems: "center" }}>
-                        Profile
+                        Fee Payment
                     </div>
 
                     <div style={{ width: "90%", height: '78%', display: "flex", alignItems: "center", justifyContent: "space-between" }}>
 
                         <div style={{ width: "20%", height: "100%", border: "2px solid #EAEAEA", borderRadius: "25px", background: "#FFF", flexDirection: "column", display: "flex", alignItems: "center", justifyContent: "space-around" }}>
 
-                            <div style={{ width: "90%", height: "35%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around" }}>
+                            <div style={{ width: "90%", height: "50%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around" }}>
 
-                                <div style={{ width: "90%", height: "20%", borderRadius: "12px", background: "#101010", color: '#FFF', fontFamily: "Lufga", fontWeight: "400", fontSize: "14px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                    Teacher Detail
-                                </div>
+                                <div onClick={() => navigate('/student/profile')} style={{ width: "90%", height: "20%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", display: "flex", alignItems: "center", justifyContent: "center" }}>Student Detail</div>
 
                                 <div style={{ width: "90%", height: "20%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", display: "flex", alignItems: "center", justifyContent: "center" }}>Performance</div>
-                                <div onClick={() => navigate('/employee/attendance')} style={{ width: "90%", height: "20%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", display: "flex", alignItems: "center", justifyContent: "center" }}>Attendance</div>
+                                <div onClick={() => navigate('/student/attendance')} style={{ width: "90%", height: "20%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", display: "flex", alignItems: "center", justifyContent: "center" }}>Attendance</div>
+                                <div onClick={() => navigate('/student/feePayment')} style={{ width: "90%", height: "20%", borderRadius: "18px", background: "#101010", color: '#FFF', fontFamily: "Lufga", fontWeight: "400", fontSize: "14px", display: "flex", alignItems: "center", justifyContent: "center" }}>Fees & Payment</div>
+                                <div onClick={() => navigate('/student/extraCurricular')} style={{ width: "90%", height: "20%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", display: "flex", alignItems: "center", justifyContent: "center" }}>Extra Curricular</div>
 
                             </div>
 
-                            <div style={{ width: "90%", height: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}></div>
+                            <div style={{ width: "90%", height: "30%", display: "flex", alignItems: "center", justifyContent: "center" }}></div>
 
-                            <div onClick={() => navigate('/employee/remove')} style={{ width: "80%", height: "10%", display: "flex", alignItems: "center", justifyContent: "center", color: "#F00", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400" }}>
-                                Remove Teacher
+                            <div onClick={() => navigate('/student/remove')} style={{ width: "80%", height: "10%", display: "flex", alignItems: "center", justifyContent: "center", color: "#F00", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400" }}>
+                                Remove Student
                             </div>
 
                         </div>
@@ -143,75 +196,36 @@ const EmployeeProfile = () => {
                                 <div style={{ width: "95%", height: "15%", display: "flex", justifyContent: "space-around", alignItems: "center" }}>
 
                                     <div style={{ width: "40%", height: "80%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontSize: "15px", fontWeight: "400" }}>
-                                        Personal Information
+                                        Fees and Payment
                                     </div>
 
                                     <div style={{ width: "20%", height: "90%" }}></div>
 
-                                    <div style={{ width: "20%", height: "90%", border: "1px solid #EAEAEA", borderRadius: "18px", display: "flex", justifyContent: "space-evenly", alignItems: "center" }}>
+                                    <div style={{ width: "30%", height: "90%", border: "1px solid #EAEAEA", borderRadius: "18px", display: "flex", justifyContent: "space-evenly", alignItems: "center" }}>
                                         <div style={{ width: "10%" }}></div>
 
-                                        <div style={{ width: "40%", height: "70%", display: "flex", justifyContent: "center", alignItems: "center", color: "#000", fontSize: "14px", fontFamily: "Lufga", fontWeight: "400" }}>
-                                            Edit
+                                        <div onClick={() => navigate('/student/feePayment')} style={{ width: "60%", height: "70%", display: "flex", justifyContent: "center", alignItems: "center", color: "#000", fontSize: "14px", fontFamily: "Lufga", fontWeight: "400" }}>
+                                            All Fee
                                         </div>
 
-                                        <div style={{ width: "15%", height: "30%", backgroundImage: `url(${edit})`, backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat" }}></div>
+                                        <div style={{ width: "15%", height: "20%", backgroundImage: `url(${down})`, backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat" }}></div>
 
                                         <div style={{ width: "10%" }}></div>
                                     </div>
 
                                 </div>
 
-                                <div style={{ width: "95%", height: "70%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                    <div style={{ width: "5%", height: "95%" }}></div>
+                                <div style={{ width: "95%", height: "70%", display: "flex", justifyContent: "space-evenly", alignItems: "center", overflow: "auto" }}>
 
-                                    <div style={{ width: "45%", height: "95%" }}>
-
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontWeight: "400", fontSize: "13px" }}>
-                                            Class Teacher
-                                        </div>
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontWeight: "400", fontSize: "15px" }}>
-                                            10 B
-                                        </div>
-
-                                        <div style={{ width: "100%", height: "15%" }}></div>
-
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontWeight: "400", fontSize: "13px" }}>
-                                            Gender
-                                        </div>
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontWeight: "400", fontSize: "15px" }}>
-                                            Gay
-                                        </div>
-
-                                        <div style={{ width: "100%", height: "15%" }}></div>
-
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontWeight: "400", fontSize: "13px" }}>
-                                            Date Of Birth
-                                        </div>
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontWeight: "400", fontSize: "15px" }}>
-                                            28 June 1995
-                                        </div>
-
-                                    </div>
-
-                                    <div style={{ width: "50%", height: "95%" }}>
-
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontWeight: "400", fontSize: "13px" }}>
-                                            Phone Number
-                                        </div>
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontWeight: "400", fontSize: "15px" }}>
-                                            +91 81034 14654
-                                        </div>
-
-                                        <div style={{ width: "100%", height: "15%" }}></div>
-
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#838A8F", fontFamily: "Lufga", fontWeight: "400", fontSize: "13px" }}>
-                                            Joining Date
-                                        </div>
-                                        <div style={{ width: "100%", height: "10%", display: "flex", alignItems: "center", color: "#374957", fontFamily: "Lufga", fontWeight: "400", fontSize: "15px" }}>
-                                            27 - 10 - 2010 ( 15 Years )
-                                        </div>
-
+                                    <div style={{ width: "100%", height: "90%", overflow: "auto", display: "grid", gridTemplateColumns: "repeat(1, 4fr)", gap: "10px" }}>
+                                        {Payments.map((payment, index) => (
+                                            <PaymentCard
+                                                key={index}
+                                                month={payment.month}
+                                                time={payment.time}
+                                                status={payment.status}
+                                            />
+                                        ))}
                                     </div>
 
                                 </div>
@@ -234,4 +248,4 @@ const EmployeeProfile = () => {
     )
 }
 
-export default EmployeeProfile
+export default AllFeeStudent;

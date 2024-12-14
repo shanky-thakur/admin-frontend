@@ -12,6 +12,13 @@ import HomePage from './Components/HomePage/HomePage';
 import EmployeeProfile from './Components/EmployeeProfile/EmployeeProfile';
 import EmployeeAttendance from './Components/EmployeeProfile/EmployeeAttendance';
 import RemoveTeacher from './Components/EmployeeProfile/RemoveTeacher';
+import Students from './Components/Students/Students';
+import StudentProfile from './Components/Students/StudentProfile';
+import RemoveStudent from './Components/Students/RemoveStudent';
+import GuardianInfo from './Components/Students/GuardianInfo';
+import StudentAttendance from './Components/Students/StudentAttendance';
+import StudentFee from './Components/Students/StudentFee';
+import AllFeeStudent from './Components/Students/AllFeeStudent';
 
 function App() {
 
@@ -37,6 +44,13 @@ function App() {
             <Route path="/employee/profile" element={< EmployeeProfile />} ></Route>
             <Route path="/employee/attendance" element={< EmployeeAttendance />} ></Route>
             <Route path="/employee/remove" element={< RemoveTeacher />}></Route>
+            <Route path="/students" element={< Students />}></Route>
+            <Route path="/student/profile" element={< StudentProfile />} ></Route>
+            <Route path="/student/guardian" element={< GuardianInfo />}></Route>
+            <Route path="/student/remove" element={< RemoveStudent />}></Route>
+            <Route path="/student/attendance" element={< StudentAttendance />} ></Route>
+            <Route path="/student/feePayment" element={< StudentFee />} ></Route>
+            <Route path="/student/fee/all" element={< AllFeeStudent />} ></Route>
           </Routes>
         )}
     </Router>
