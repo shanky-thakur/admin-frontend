@@ -171,12 +171,12 @@ const Sports = () => {
                                         </div>
 
                                         {isOpen && (
-                                                <div style={{ position: "absolute", width: "10%", height: "30%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", marginTop: "10px", backgroundColor: "#FFF", borderRadius: "18px", border: "1px solid #EAEAEA" }}>
-                                                    <div onClick={() => navigate('/student/extraCurricular/clubs')} style={{ width: "100%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", textAlign: "center", padding: "10px" }}>Clubs</div>
-                                                    <div onClick={() => navigate('/student/extraCurricular/sports')} style={{ width: "100%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", textAlign: "center", padding: "10px" }}>Sports</div>
-                                                    <div onClick={() => navigate('/student/extraCurricular/achievements')} style={{ width: "100%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", textAlign: "center", padding: "10px" }}>Achievements</div>
-                                                </div>
-                                            )}
+                                            <div style={{ position: "absolute", width: "10%", height: "30%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", marginTop: "10px", backgroundColor: "#FFF", borderRadius: "18px", border: "1px solid #EAEAEA" }}>
+                                                <div onClick={() => navigate('/student/extraCurricular/clubs')} style={{ width: "100%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", textAlign: "center", padding: "10px" }}>Clubs</div>
+                                                <div onClick={() => navigate('/student/extraCurricular/sports')} style={{ width: "100%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", textAlign: "center", padding: "10px" }}>Sports</div>
+                                                <div onClick={() => navigate('/student/extraCurricular/achievements')} style={{ width: "100%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", textAlign: "center", padding: "10px" }}>Achievements</div>
+                                            </div>
+                                        )}
 
                                     </div>
 

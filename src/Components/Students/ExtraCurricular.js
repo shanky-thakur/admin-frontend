@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import imagePic from "../../assets/images/profileImage.svg";
@@ -9,6 +9,12 @@ import down from "../../assets/images/vector-down-black.svg";
 
 const ExtraCurricular = () => {
     const navigate = useNavigate();
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (
         <div style={{ width: "80vw", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -150,7 +156,7 @@ const ExtraCurricular = () => {
 
                                     <div style={{ width: "45%", height: "80%", display: "flex", alignItems: "center", justifyContent: "end" }}>
 
-                                        <div style={{ width: "95%", height: "90%", border: "1px solid #EAEAEA", borderRadius: "18px", display: "flex", justifyContent: "space-evenly", alignItems: "center" }}>
+                                        <div onClick={toggleDropdown} style={{ width: "95%", height: "90%", border: "1px solid #EAEAEA", borderRadius: "18px", display: "flex", justifyContent: "space-evenly", alignItems: "center" }}>
                                             <div style={{ width: "10%" }}></div>
 
                                             <div style={{ width: "90%", height: "70%", display: "flex", justifyContent: "center", alignItems: "center", color: "#000", fontSize: "14px", fontFamily: "Lufga", fontWeight: "400" }}>
@@ -162,6 +168,14 @@ const ExtraCurricular = () => {
 
                                             <div style={{ width: "10%" }}></div>
                                         </div>
+
+                                        {isOpen && (
+                                            <div style={{ position: "absolute", width: "10%", height: "30%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", marginTop: "10px", backgroundColor: "#FFF", borderRadius: "18px", border: "1px solid #EAEAEA" }}>
+                                                <div onClick={() => navigate('/student/extraCurricular/clubs')} style={{ width: "100%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", textAlign: "center", padding: "10px" }}>Clubs</div>
+                                                <div onClick={() => navigate('/student/extraCurricular/sports')} style={{ width: "100%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", textAlign: "center", padding: "10px" }}>Sports</div>
+                                                <div onClick={() => navigate('/student/extraCurricular/achievements')} style={{ width: "100%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", textAlign: "center", padding: "10px" }}>Achievements</div>
+                                            </div>
+                                        )}
 
                                     </div>
 
@@ -200,7 +214,7 @@ const ExtraCurricular = () => {
                                             2020 - Present
                                         </div>
 
-                                        
+
 
                                     </div>
 
