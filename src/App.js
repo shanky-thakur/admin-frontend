@@ -25,6 +25,8 @@ import Achievements from './Components/Students/Achievements';
 import Calendar from './Components/Calender/Calender';
 import EmployeeAbsent from './Components/Attendance/EmployeeAbsent';
 import AttendanceEmployee from './Components/Attendance/AttendanceEmployee';
+import AttendanceStudent from "./Components/Attendance/AttendanceStudents";
+import StudentAbsent from "./Components/Attendance/StudentAbsent";
 
 function App() {
 
@@ -63,6 +65,8 @@ function App() {
             <Route path="/calender" element={< Calendar />}></Route>
             <Route path="/attendance/employee" element={< AttendanceEmployee />}></Route>
             <Route path="/attendance/employee/absent" element={< EmployeeAbsent />}></Route>
+            <Route path="/attendance/student" element={< AttendanceStudent />}></Route>
+            <Route path="/attendance/student/absent" element={< StudentAbsent />}></Route>
           </Routes>
         )}
     </Router>

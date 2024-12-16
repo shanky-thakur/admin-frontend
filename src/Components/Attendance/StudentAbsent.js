@@ -1,14 +1,45 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import avatar from "../../assets/images/avatar.png";
 import img3 from "../../assets/images/ellipse-69.png";
 import img4 from "../../assets/images/group-1.png";
 import img5 from "../../assets/images/ellipse-1385.svg";
-import pie from "../../assets/images/Frame_1261151750.png";
 import down from "../../assets/images/vector-down-black.svg";
 
 const EmployeeAttendance = () => {
   const navigate = useNavigate();
+
+  const studentData = [
+    { name: "arav anand", section: "10th", class: "Class Student" },
+    { name: "arav anand", section: "10th", class: "Class Student" },
+    { name: "arav anand", section: "10th", class: "Class Student" },
+    { name: "arav anand", section: "10th", class: "Class Student" }, 
+    { name: "arav anand", section: "10th", class: "Class Student" },
+    { name: "arav anand", section: "10th", class: "Class Student" },
+    { name: "arav anand", section: "10th", class: "Class Student" },
+  ];
+
+  const EmployeeCard = ({ name, avatar, section, className }) => {
+    return (
+      <div style={{ width: "90%", height: "100px", border: "1px solid #EAEAEA", borderRadius: "20px", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center" }}>
+        <div style={{ width: "30%", height: "40%", backgroundImage: `url(${avatar})`, backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat" }}></div>
+        <div style={{ width: "90%", height: "30%", display: "flex", justifyContent: "space-evenly", alignItems: "center", flexDirection: "column" }}>
+          <div style={{ width: "90%", height: "60%",display: "flex", alignItems: "center", justifyContent: "center", color: "#010101", fontWeight: "500", fontFamily: "Lufga", fontSize: "10px" }}>
+            {name}
+          </div>
+          <div style={{ width: "90%", height: "35%", display: "flex", alignItems: "center", justifyContent: "space-evenly" }}>
+            <div style={{ width: "65%", height: "100%", display: "flex", alignItems: "center", justifyContent: "end", color: " #838A8F", fontWeight: "400", fontFamily: "Lufga", fontSize: "8px" }}>
+              {className}
+            </div>
+            <div style={{ width: "30%", height: "100%", display: "flex", alignItems: "center", justifyContent: "start", color: " #838A8F", fontWeight: "400", fontFamily: "Lufga", fontSize: "8px" }}>
+              {section}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div style={{ width: "80vw", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -94,11 +125,11 @@ const EmployeeAttendance = () => {
 
               <div style={{ width: "90%", height: "30%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-evenly" }}>
 
-                <div style={{ width: "90%", height: "35%", borderRadius: "18px", background: "#101010", color: '#FFF', fontFamily: "Lufga", fontWeight: "400", fontSize: "14px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                  Attendance
-                </div>
+                <div onClick={() => navigate('/attendance/student')} style={{ width: "90%", height: "45%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", display: "flex", alignItems: "center", justifyContent: "center" }}>Attendance</div>
 
-                <div onClick={() => navigate('/attendance/employee/absent')} style={{ width: "90%", height: "45%", color: "#374957", fontFamily: "Lufga", fontSize: "14px", fontWeight: "400", display: "flex", alignItems: "center", justifyContent: "center" }}>Absent</div>
+                <div style={{ width: "90%", height: "35%", borderRadius: "18px", background: "#101010", color: '#FFF', fontFamily: "Lufga", fontWeight: "400", fontSize: "14px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  Absent
+                </div>
 
               </div>
 
@@ -116,9 +147,9 @@ const EmployeeAttendance = () => {
 
                 <div style={{ width: "55%", height: "50%", display: "flex", alignItems: "center", justifyContent: "space-evenly" }}>
 
-                  <div style={{ width: "45%", height: "90%", background: "#FFD600", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "20px", border: "1px solid #EAEAEA", color: "#000", fontFamily: "Lufga", fontWeight: "400", fontSize: "14px" }}>Employee</div>
+                  <div onClick={() => navigate('/attendance/employee')} style={{ width: "45%", height: "90%", background: "#FFF", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "20px", border: "1px solid #EAEAEA", color: "#000", fontFamily: "Lufga", fontWeight: "400", fontSize: "14px" }}>Employee</div>
 
-                  <div onClick={() => navigate('/attendance/student')} style={{ width: "45%", height: "90%", background: "#FFF", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "20px", border: "1px solid #EAEAEA", color: "#000", fontFamily: "Lufga", fontWeight: "400", fontSize: "14px" }}>Student</div>
+                  <div style={{ width: "45%", height: "90%", background: "#FFD600", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "20px", border: "1px solid #EAEAEA", color: "#000", fontFamily: "Lufga", fontWeight: "400", fontSize: "14px" }}>Student</div>
 
                 </div>
 
@@ -131,11 +162,9 @@ const EmployeeAttendance = () => {
                 <div style={{ width: "95%", height: "15%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
 
                   <div style={{ width: "40%", height: "100%", display: "flex", alignItems: "center", justifyContent: "space-evenly" }}>
-                    <div style={{ width: "60%", height: "90%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-evenly" }}>
-                      <div style={{ width: "90%", height: "70%", color: "#374957", fontFamily: "Lufga", fontSize: "15px", fontWeight: "400", display: "flex", alignItems: "end", justifyContent: "center" }}>Attendance</div>
-                      <div style={{ width: "90%", height: "30%", color: "#838A8F", fontFamily: "Lufga", fontSize: "12px", fontWeight: "400", display: "flex", alignItems: "center", justifyContent: "center" }}>Total Employee</div>
+                    <div style={{ width: "100%", height: "90%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-evenly" }}>
+                      <div style={{ width: "90%", height: "70%", color: "#374957", fontFamily: "Lufga", fontSize: "15px", fontWeight: "400", display: "flex", alignItems: "end", justifyContent: "center" }}>Absent Students</div>
                     </div>
-                    <div style={{ width: "40%", height: "100%", color: "#374957", fontFamily: "Lufga", fontSize: "15px", fontWeight: "400", display: "flex", alignItems: "end", justifyContent: "start" }}>90</div>
                   </div>
 
                   <div style={{ width: "10%", height: "80%" }}></div>
@@ -146,7 +175,7 @@ const EmployeeAttendance = () => {
                       <div style={{ width: "10%" }}></div>
 
                       <div style={{ width: "70%", height: "70%", display: "flex", justifyContent: "center", alignItems: "center", color: "#000", fontSize: "14px", fontFamily: "Lufga", fontWeight: "400" }}>
-                        Teachers
+                        Students
                       </div>
 
                       <div style={{ width: "15%", height: "20%", backgroundImage: `url(${down})`, backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat" }}></div>
@@ -171,79 +200,20 @@ const EmployeeAttendance = () => {
 
                 </div>
 
-                <div style={{ width: "95%", height: "70%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                  <div style={{ width: "5%", height: "95%" }}></div>
+                <div style={{ width: "95%", height: "75%", display: "flex", justifyContent: "center", alignItems: "center" }}>
 
-                  <div style={{ width: "45%", height: "95%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-
-                    <div style={{ width: "70%", height: "80%", backgroundImage: `url(${pie})`, backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat", display: "flex", justifyContent: "center", alignItems: "center" }}>
-
-                      <div style={{ width: "35%", height: "40%", display: "flex", justifyContent: "space-between", alignItems: "center", flexDirection: "column" }}>
-
-                        <div style={{ width: "100%", height: "60%", display: "flex", alignItems: "end", justifyContent: "center", color: "#374957", fontFamily: "Lufga", fontSize: "16px", fontWeight: "600" }}>
-                          74
-                        </div>
-
-                        <div style={{ width: "100%", height: "40%", display: "flex", alignItems: "start", justifyContent: "center", color: "#374957", fontFamily: "Lufga", fontSize: "10px", fontWeight: "400" }}>
-                          Present
-                        </div>
-
-                      </div>
-
+                  <div style={{ width: "100%", height: "70%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <div onClick={() => navigate('/student/profile')} className="employee-cards-container" style={{ display: "grid", gridTemplateColumns: "repeat(2, 45%)", gap: "20px", width: "90%", height: "90%", overflowX: "auto" }}>
+                      {studentData.map((student, index) => (
+                        <EmployeeCard
+                          key={index}
+                          name={student.name}
+                          avatar={avatar}
+                          className={student.class}
+                          section={student.section}
+                        />
+                      ))}
                     </div>
-
-                  </div>
-
-                  <div style={{ width: "50%", height: "95%", display: "flex", justifyContent: 'space-evenly', alignItems: "center" }}>
-
-                    <div style={{ width: "50%", height: "95%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-evenly" }}>
-
-                      <div style={{ width: "100%", height: "30%", display: "flex", flexDirection: "column" }}>
-                        <div style={{ width: "100%", height: "30%", color: "#838A8F", fontFamily: "Lufga", fontSize: "10px", fontWeight: "400", display: "flex", alignItems: "center" }}>
-                          Total Present
-                        </div>
-                        <div style={{ width: "100%", height: "70%", color: "#374957", fontFamily: "Lufga", fontSize: "16px", fontWeight: "400", display: "flex", alignItems: "start" }}>
-                          74
-                        </div>
-                      </div>
-
-                      <div style={{ width: "100%", height: "30%", display: "flex", flexDirection: "column" }}>
-                        <div style={{ width: "100%", height: "30%", color: "#838A8F", fontFamily: "Lufga", fontSize: "10px", fontWeight: "400", display: "flex", alignItems: "center" }}>
-                          Total Absent
-                        </div>
-                        <div style={{ width: "100%", height: "70%", color: "#374957", fontFamily: "Lufga", fontSize: "16px", fontWeight: "400", display: "flex", alignItems: "start" }}>
-                          3
-                        </div>
-                      </div>
-
-                      <div style={{ width: "100%", height: "30%", display: "flex", flexDirection: "column" }}>
-                        <div style={{ width: "100%", height: "30%", color: "#838A8F", fontFamily: "Lufga", fontSize: "10px", fontWeight: "400", display: "flex", alignItems: "center" }}>
-                          On Leava
-                        </div>
-                        <div style={{ width: "100%", height: "70%", color: "#374957", fontFamily: "Lufga", fontSize: "16px", fontWeight: "400", display: "flex", alignItems: "start" }}>
-                          1
-                        </div>
-                      </div>
-
-                    </div>
-
-                    <div style={{ width: "50%", height: "95%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-evenly" }}>
-
-                      <div style={{ width: "100%", height: "30%", display: "flex", flexDirection: "column" }}>
-                        <div style={{ width: "100%", height: "30%", color: "#838A8F", fontFamily: "Lufga", fontSize: "10px", fontWeight: "400", display: "flex", alignItems: "center" }}>
-                          Late Check-in
-                        </div>
-                        <div style={{ width: "100%", height: "70%", color: "#374957", fontFamily: "Lufga", fontSize: "16px", fontWeight: "400", display: "flex", alignItems: "start" }}>
-                          2
-                        </div>
-                      </div>
-
-                      <div style={{ width: "100%", height: "30%" }}></div>
-
-                      <div style={{ width: "100%", height: "30%" }}></div>
-
-                    </div>
-
                   </div>
 
                 </div>
