@@ -22,6 +22,7 @@ import AllFeeStudent from './Components/Students/AllFeeStudent';
 import ExtraCurricular from './Components/Students/ExtraCurricular';
 import Sports from "./Components/Students/Sports";
 import Achievements from './Components/Students/Achievements';
+import Calendar from './Components/Calender/Calender';
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
             <Route path="/student/extraCurricular/clubs" element={< ExtraCurricular />} ></Route>
             <Route path="/student/extraCurricular/sports" element={< Sports />} ></Route>
             <Route path="/student/extraCurricular/achievements" element={< Achievements />} ></Route>
+            <Route path="/calender" element={< Calendar />}></Route>
           </Routes>
         )}
     </Router>
