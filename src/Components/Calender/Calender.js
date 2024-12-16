@@ -1,20 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import imagePic from "../../assets/images/profileImage.svg";
 import img3 from "../../assets/images/ellipse-69.png";
 import img4 from "../../assets/images/group-1.png";
 import img5 from "../../assets/images/ellipse-1385.svg";
-import down from "../../assets/images/vector-down-black.svg";
+
+import CalendarComponent from "./CalendarComponent";
 
 const Calender = () => {
-    const navigate = useNavigate();
-
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleDropdown = () => {
-        setIsOpen(!isOpen);
-    };
+    const navigate = useNavigate(); 
 
     return (
         <div style={{ width: "80vw", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -100,7 +94,9 @@ const Calender = () => {
 
                             <div style={{ width: "48%", height: "95%", display: "flex", alignItems: "center", justifyContent: "space-evenly", flexDirection: "column" }}>
 
-                                <div style={{ width: "95%", height: "75%", border: "1px solid black" }}>
+                                <div style={{ width: "95%", height: "75%", display: "flex", justifyContent: "center", alignItems: "center", background: "#FFF", borderRadius: "20px" }}>
+
+                                    <CalendarComponent/>
 
                                 </div>
 
