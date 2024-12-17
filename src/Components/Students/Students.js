@@ -187,7 +187,7 @@ const Students = () => {
                         <div style={{ height: "100%", width: "20%", display: "flex", alignItems: "center", justifyContent: "center", color: "#374957", fontFamily: "Lufga", fontSize: "22px", fontWeight: "600" }}>
                             Students
                         </div>
-                        <div className='addEmployee'>
+                        <div onClick={() => navigate('/add/student')} className='addEmployee'>
                             <div className='innerAdd' >
                                 <div>
                                     <img src={add} alt='img'></img>

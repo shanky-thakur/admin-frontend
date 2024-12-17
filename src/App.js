@@ -32,6 +32,8 @@ import AddCertificates from "./Components/Certificate/AddCertificate";
 import NewNotice from "./Components/Notice/NewNotice";
 import ViewNotice from "./Components/Notice/ViewNotice";
 import DisplayNotice from "./Components/Notice/DisplayNotice";
+import NewAdmission from "./Components/NewAdmission/NewAdmission";
+import NewEmployee from './Components/NewAdmission/NewEmployee';
 
 function App() {
 
@@ -77,6 +79,8 @@ function App() {
             <Route path="/notice" element={< NewNotice />}></Route>
             <Route path="/notice/all" element={< ViewNotice />}></Route>
             <Route path="/notice/view" element={< DisplayNotice />}></Route>
+            <Route path="/add/student" element={< NewAdmission />}></Route>
+            <Route path="/add/employee" element={< NewEmployee />}></Route>
           </Routes>
         )}
     </Router>
