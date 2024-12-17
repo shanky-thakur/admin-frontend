@@ -27,6 +27,8 @@ import EmployeeAbsent from './Components/Attendance/EmployeeAbsent';
 import AttendanceEmployee from './Components/Attendance/AttendanceEmployee';
 import AttendanceStudent from "./Components/Attendance/AttendanceStudents";
 import StudentAbsent from "./Components/Attendance/StudentAbsent";
+import Certificates from "./Components/Certificate/Certificates";
+import AddCertificates from "./Components/Certificate/AddCertificate";
 
 function App() {
 
@@ -67,6 +69,8 @@ function App() {
             <Route path="/attendance/employee/absent" element={< EmployeeAbsent />}></Route>
             <Route path="/attendance/student" element={< AttendanceStudent />}></Route>
             <Route path="/attendance/student/absent" element={< StudentAbsent />}></Route>
+            <Route path="/certificate" element={< Certificates />}></Route>
+            <Route path="/certificate/new" element={< AddCertificates />}></Route>
           </Routes>
         )}
     </Router>

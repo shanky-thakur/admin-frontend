@@ -1,0 +1,67 @@
+.element {
+    cursor: default;
+    border: "1px solid black";
+}
+
+.innerElement:hover {
+    font-weight: 600px;
+}
+
+.expand:active {
+    transform: rotate(-90deg);
+}
+
+.employee-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    .employee-cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .employee-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .employee-cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.addEmployeeButton {
+    color: #FFF;
+    font-family: Lufga;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.addEmployee {
+    width: 28%;
+    height: 90%;
+    border-radius: 25px;
+    border: 1px solid #EAEAEA;
+    background: #FFD600;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.innerAdd {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addEmployee:hover {
+    background: #161616;
+    transform: scale(1.01);
+}
