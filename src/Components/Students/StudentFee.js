@@ -22,29 +22,29 @@ const StudentFee = () => {
     const handleSuccess = () => {
         setPayment(!payment);
 
-        if(status === "PAID") setStatus("UNPAID");
+        if (status === "PAID") setStatus("UNPAID");
         else setStatus("PAID");
 
-        if(dues === "NA") setDues("Due by 05-05-2025");
+        if (dues === "NA") setDues("Due by 05-05-2025");
         else setDues("NA");
 
-        if(paymentTime === "NA") setPaymentTime("12200/ - 02-05-2025");
+        if (paymentTime === "NA") setPaymentTime("12200/ - 02-05-2025");
         else setPaymentTime("NA");
 
-        if(method === "NA") setMethod("online");
+        if (method === "NA") setMethod("online");
         else setMethod("NA");
     }
 
     const StatusPicStyle = {
-        width: "65%", 
-        height: "65%", 
-        display: "flex", 
-        flexDirection: "column", 
-        alignItems: "center", 
-        justifyContent: "center", 
-        backgroundImage: payment ? `url(${success})` : `url(${fail})`, 
-        backgroundSize: "contain", 
-        backgroundPosition: "center", 
+        width: "65%",
+        height: "65%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundImage: payment ? `url(${success})` : `url(${fail})`,
+        backgroundSize: "contain",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
     }
 
@@ -102,6 +102,11 @@ const StudentFee = () => {
                             <div onClick={() => navigate('/certificate')} className='element' style={{ width: "70%", height: "10%", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "20px", border: "none" }}>
                                 <div className='innerElement' style={{ fontFamily: "Lufga", fontSize: "16px", color: "#374957", fontWeight: "400" }}>
                                     Certificate
+                                </div>
+                            </div>
+                            <div onClick={() => navigate('/notice')} className='element' style={{ width: "70%", height: "10%", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "20px", border: "none" }}>
+                                <div className='innerElement' style={{ fontFamily: "Lufga", fontSize: "16px", color: "#374957", fontWeight: "400" }}>
+                                    Notice
                                 </div>
                             </div>
                         </div>

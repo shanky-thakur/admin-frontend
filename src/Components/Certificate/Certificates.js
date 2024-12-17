@@ -120,6 +120,11 @@ const Certificates = () => {
                   Certificate
                 </div>
               </div>
+              <div onClick={() => navigate('/notice')} className='element' style={{ width: "70%", height: "10%", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "20px", border: "none" }}>
+                <div className='innerElement' style={{ fontFamily: "Lufga", fontSize: "16px", color: "#374957", fontWeight: "400" }}>
+                  Notice
+                </div>
+              </div>
             </div>
 
             <div style={{ width: "100%", height: "10%" }}></div>

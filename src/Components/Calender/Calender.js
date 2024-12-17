@@ -8,7 +8,7 @@ import img5 from "../../assets/images/ellipse-1385.svg";
 import CalendarComponent from "./CalendarComponent";
 
 const Calender = () => {
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
     return (
         <div style={{ width: "80vw", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -66,6 +66,11 @@ const Calender = () => {
                                     Certificate
                                 </div>
                             </div>
+                            <div onClick={() => navigate('/notice')} className='element' style={{ width: "70%", height: "10%", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "20px", border: "none" }}>
+                                <div className='innerElement' style={{ fontFamily: "Lufga", fontSize: "16px", color: "#374957", fontWeight: "400" }}>
+                                    Notice
+                                </div>
+                            </div>
                         </div>
 
                         <div style={{ width: "100%", height: "10%" }}></div>
@@ -96,7 +101,7 @@ const Calender = () => {
 
                                 <div style={{ width: "95%", height: "75%", display: "flex", justifyContent: "center", alignItems: "center", background: "#FFF", borderRadius: "20px" }}>
 
-                                    <CalendarComponent/>
+                                    <CalendarComponent />
 
                                 </div>
 
@@ -114,7 +119,7 @@ const Calender = () => {
                                                 Republic day Celebration
                                             </div>
 
-                                            <div style={{ width: "90%", height: "40%",  display: "flex", alignItems: "start", justifyContent: "center", color: "#838A8F", fontFamily: "Lufga", fontWeight: "300", fontSize: "10px" }}>
+                                            <div style={{ width: "90%", height: "40%", display: "flex", alignItems: "start", justifyContent: "center", color: "#838A8F", fontFamily: "Lufga", fontWeight: "300", fontSize: "10px" }}>
                                                 Venue - Lodhi Garden
                                             </div>
 
