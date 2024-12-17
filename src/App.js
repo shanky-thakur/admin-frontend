@@ -29,6 +29,9 @@ import AttendanceStudent from "./Components/Attendance/AttendanceStudents";
 import StudentAbsent from "./Components/Attendance/StudentAbsent";
 import Certificates from "./Components/Certificate/Certificates";
 import AddCertificates from "./Components/Certificate/AddCertificate";
+import NewNotice from "./Components/Notice/NewNotice";
+import ViewNotice from "./Components/Notice/ViewNotice";
+import DisplayNotice from "./Components/Notice/DisplayNotice";
 
 function App() {
 
@@ -71,6 +74,9 @@ function App() {
             <Route path="/attendance/student/absent" element={< StudentAbsent />}></Route>
             <Route path="/certificate" element={< Certificates />}></Route>
             <Route path="/certificate/new" element={< AddCertificates />}></Route>
+            <Route path="/notice" element={< NewNotice />}></Route>
+            <Route path="/notice/all" element={< ViewNotice />}></Route>
+            <Route path="/notice/view" element={< DisplayNotice />}></Route>
           </Routes>
         )}
     </Router>
