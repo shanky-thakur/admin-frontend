@@ -34,6 +34,8 @@ import ViewNotice from "./Components/Notice/ViewNotice";
 import DisplayNotice from "./Components/Notice/DisplayNotice";
 import NewAdmission from "./Components/NewAdmission/NewAdmission";
 import NewEmployee from './Components/NewAdmission/NewEmployee';
+import Finance from "./Components/Finance/Finance";
+import StaffFinance from "./Components/Finance/StaffFinance";
 
 function App() {
 
@@ -81,6 +83,8 @@ function App() {
             <Route path="/notice/view" element={< DisplayNotice />}></Route>
             <Route path="/add/student" element={< NewAdmission />}></Route>
             <Route path="/add/employee" element={< NewEmployee />}></Route>
+            <Route path="/finace" element={< Finance />}></Route>
+            <Route path="/finance/staff" element={< StaffFinance />}></Route>
           </Routes>
         )}
     </Router>
